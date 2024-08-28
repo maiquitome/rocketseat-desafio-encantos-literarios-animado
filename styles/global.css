@@ -9,3 +9,36 @@
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
+
+:root {
+  --color-pink-light: #c59dd2;
+  --color-pink-base: #9547a5;
+  --color-pink-dark: #7d298a;
+  --color-pink-low: #3f0f41;
+
+  --color-blue-light: #73b6d2;
+  --color-blue-base: #358bb9;
+  --color-blue-mid: #2374a4;
+  --color-blue-dark: #144a72;
+  --color-blue-low: #08233c;
+
+  --color-shape-stroke: #002347;
+  --color-shape-hover: #001933;
+  --color-shape-base: #000f1f;
+  --color-shape-background: #00050a;
+
+  --color-text-title: #f8fbfb;
+  --color-text-body: #e2e7e9;
+  --color-text-label: #bac6c9;
+}
+
+body {
+  background-color: var(--color-shape-background);
+  color: var(--color-text-body);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-text-title);
+}
