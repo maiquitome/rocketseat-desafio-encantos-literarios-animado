@@ -30,6 +30,24 @@
   --color-text-title: #f8fbfb;
   --color-text-body: #e2e7e9;
   --color-text-label: #bac6c9;
+
+  --font-family: "Raleway", sans-serif;
+
+  --font-title-lg: 700 3rem / normal var(--font-family);
+  --font-title-md: 700 2.5rem / normal var(--font-family);
+  --font-title-sm: 700 2rem / normal var(--font-family);
+  --font-title-xs: 700 1rem / normal var(--font-family);
+
+  --font-subtitle: 500 2rem / 200% var(--font-family);
+
+  --font-body-lg: 400 1.25rem / 140% var(--font-family);
+  --font-body-md: 400 1rem / 140% var(--font-family);
+  --font-body-sm: 400 0.875rem / 140% var(--font-family);
+  --font-body-xs: 400 0.75rem / 140% var(--font-family);
+
+  --font-button: 700 0.875rem / normal var(--font-family);
+  --font-link: 500 0.875rem / normal var(--font-family);
+  --font-tag: 700 0.625rem / normal var(--font-family);
 }
 
 body {
