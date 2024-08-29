@@ -45,7 +45,7 @@
   --font-body-sm: 400 0.875rem / 140% var(--font-family);
   --font-body-xs: 400 0.75rem / 140% var(--font-family);
 
-  --font-button: 700 0.875rem / normal var(--font-family);
+  --font-button: 700 0.875rem / 0 var(--font-family);
   --font-link: 500 0.875rem / normal var(--font-family);
   --font-tag: 700 0.625rem / normal var(--font-family);
 }
@@ -59,4 +59,14 @@ h1,
 h2,
 h3 {
   color: var(--color-text-title);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 90rem;
+  margin: auto;
 }

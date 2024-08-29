@@ -1,0 +1,9 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 3.5rem 10rem 0 10rem;
+}
+
+.button-wrapper {
+  width: 4.875rem;
+}
