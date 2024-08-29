@@ -6,4 +6,5 @@ header {
 
 .button-wrapper {
   width: 4.875rem;
+  margin-block: 0.5625rem;
 }

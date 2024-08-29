@@ -2,13 +2,14 @@ a.button {
   background-color: var(--color-pink-dark);
   font: var(--font-button);
   border-radius: 0.5rem;
-  margin-block: 0.5625rem;
   height: 2.5rem;
   width: 100%;
 
   display: flex;
   align-items: center;
   justify-content: center;
+
+  overflow: hidden;
 
   position: relative;
   & span {
@@ -17,20 +18,17 @@ a.button {
 
   &:hover::after {
     scale: 1;
-    width: 100%;
-    border-radius: 0.5rem;
-    background: var(--color-pink-base);
   }
 
   &::after {
     content: "";
     position: absolute;
 
-    width: calc(100% / 2);
-    height: inherit;
+    width: 110%;
+    height: 230%;
 
     border-radius: 50%;
-    background: #9547a5;
+    background: var(--color-pink-base);
 
     scale: 0;
     transition: scale 500ms;
