@@ -1,0 +1,59 @@
+section#hero {
+  height: 59.25rem;
+  position: relative;
+
+  #hero-background {
+    background: url(../assets/hero-background-gradient.svg) top center/cover
+      no-repeat;
+
+    position: absolute;
+    inset: 0;
+
+    opacity: 0;
+    animation: appear 1s forwards;
+
+    z-index: -1;
+
+    &::after {
+      content: "";
+
+      background: url(../assets/hero-background.svg) top center/cover no-repeat;
+
+      position: absolute;
+      inset: 0;
+
+      height: 100%;
+
+      opacity: 0;
+      animation: appear 2s 500ms forwards;
+    }
+  }
+
+  & div.text-container {
+    padding-top: 164px;
+    width: 41rem;
+    margin: auto;
+
+    & h1 {
+      text-align: center;
+      font: var(--font-title-lg);
+    }
+
+    & div.inner-text-container {
+      max-width: 558px;
+      margin: auto;
+      padding-top: 2rem;
+
+      & p {
+        font: var(--font-body-lg);
+        text-align: center;
+      }
+    }
+  }
+}
+
+@keyframes appear {
+  to {
+    opacity: 1;
+  }
+}
