@@ -11,27 +11,19 @@ section#hero {
       margin-block: 0.5625rem;
     }
   }
-
-  & div.text-container {
+  & h1 {
     padding-top: 164px;
     width: 41rem;
     margin: auto;
-
-    & h1 {
-      text-align: center;
-      font: var(--font-title-lg);
-    }
-
-    & div.inner-text-container {
-      max-width: 558px;
-      margin: auto;
-      padding-top: 2rem;
-
-      & p {
-        font: var(--font-body-lg);
-        text-align: center;
-      }
-    }
+    text-align: center;
+    font: var(--font-title-lg);
+  }
+  & p {
+    max-width: 558px;
+    margin: auto;
+    padding-top: 2rem;
+    font: var(--font-body-lg);
+    text-align: center;
   }
 
   #hero-background {
