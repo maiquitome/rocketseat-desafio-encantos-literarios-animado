@@ -17,6 +17,9 @@ section#hero {
     margin: auto;
     text-align: center;
     font: var(--font-title-lg);
+
+    opacity: 0;
+    animation: appear 2s 500ms forwards;
   }
   & p {
     max-width: 558px;
@@ -24,6 +27,9 @@ section#hero {
     padding-top: 2rem;
     font: var(--font-body-lg);
     text-align: center;
+
+    opacity: 0;
+    animation: appear 2s 1s forwards;
   }
 
   #hero-background {
