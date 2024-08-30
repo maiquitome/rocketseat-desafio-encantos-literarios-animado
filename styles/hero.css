@@ -17,6 +17,7 @@ section#hero {
     margin: auto;
     text-align: center;
     font: var(--font-title-lg);
+    color: var(--color-text-title);
 
     opacity: 0;
     animation: appear 2s 500ms forwards;
