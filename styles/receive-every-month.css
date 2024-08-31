@@ -1,0 +1,134 @@
+section#receive-every-month {
+  padding-block: 6.51625rem 9.5rem;
+  padding-inline: 2rem;
+  text-align: center;
+
+  & img {
+    scale: 0;
+    transition: all 500ms;
+    &:hover {
+      rotate: 10deg;
+    }
+  }
+
+  & h2 {
+    max-width: 75rem;
+    margin: auto;
+    font: var(--font-subtitle);
+    text-align: center;
+    color: rgb(226, 231, 233, 50%);
+    & span {
+      & > b {
+        font-weight: bold;
+      }
+    }
+    & > div {
+      --large-image: 5.0625rem;
+      height: calc(var(--large-image) + 0.4375rem);
+      display: flex;
+      justify-content: space-between;
+      & div#ouija-planchette {
+        min-width: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & img {
+          height: 4.545625rem;
+          transform: rotate(99.47deg);
+
+          &:hover {
+            height: var(--large-image);
+          }
+        }
+      }
+      & div#cristal-ball {
+        display: flex;
+        align-items: center;
+        --large-image: 4.5625rem;
+        height: calc(var(--large-image) + 0.1875rem);
+
+        & img {
+          height: 4.0625rem;
+          transform: rotate(-14.48deg);
+          &:hover {
+            height: var(--large-image);
+          }
+        }
+      }
+    }
+  }
+
+  & > div#opened-spellbook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    --large-image: 5.5rem;
+    height: calc(var(--large-image) + 0.1875rem);
+    & img {
+      height: 5rem;
+      transform: rotate(20deg);
+      &:hover {
+        height: var(--large-image);
+      }
+    }
+  }
+
+  &:hover {
+    & > div#opened-spellbook {
+      img {
+        scale: 1;
+      }
+    }
+
+    & h2 {
+      & span {
+        &:first-child {
+          animation: colorTextBody 500ms ease forwards;
+
+          & > b {
+            animation: colorBlue 500ms ease forwards;
+          }
+        }
+        &:nth-child(2) {
+          animation: colorTextBody 500ms ease 500ms forwards;
+
+          & > b {
+            animation: colorBlue 500ms ease 500ms forwards;
+          }
+        }
+        &:nth-child(3) {
+          animation: colorTextBody 500ms ease 1s forwards;
+
+          & > b {
+            animation: colorBlue 500ms ease 1s forwards;
+          }
+        }
+      }
+      & > div {
+        & div#ouija-planchette {
+          & img {
+            transition: all 500ms, scale 500ms 500ms;
+            scale: 1;
+          }
+        }
+        & div#cristal-ball {
+          & img {
+            transition: all 500ms, scale 500ms 1s;
+            scale: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes colorTextBody {
+  to {
+    color: var(--color-text-body);
+  }
+}
+@keyframes colorBlue {
+  to {
+    color: var(--color-blue-light);
+  }
+}
