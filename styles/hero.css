@@ -12,8 +12,8 @@ section#hero {
     }
   }
   & h1 {
-    padding-top: 164px;
-    width: 41rem;
+    padding-top: 10.25rem;
+    max-width: 41rem;
     margin: auto;
     text-align: center;
     font: var(--font-title-lg);
@@ -23,7 +23,7 @@ section#hero {
     animation: appear 2s 500ms forwards;
   }
   & p {
-    max-width: 558px;
+    max-width: 34.875rem;
     margin: auto;
     padding-top: 2rem;
     font: var(--font-body-lg);
