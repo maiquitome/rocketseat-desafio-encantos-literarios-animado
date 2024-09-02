@@ -1,6 +1,7 @@
 a.button {
   background-color: var(--color-pink-dark);
   font: var(--font-button);
+  color: var(--color-text-title);
   border-radius: 0.5rem;
   height: 2.5rem;
   width: 100%;
