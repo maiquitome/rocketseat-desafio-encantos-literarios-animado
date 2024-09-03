@@ -10,6 +10,9 @@ section#hero {
       width: 4.875rem;
       margin-block: 0.5625rem;
     }
+    & > a > img {
+      max-width: 14.375rem;
+    }
   }
   & h1 {
     padding-top: 10.25rem;
