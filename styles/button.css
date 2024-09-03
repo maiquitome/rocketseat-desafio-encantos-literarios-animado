@@ -34,4 +34,11 @@ a.button {
     scale: 0;
     transition: scale 500ms;
   }
+
+  &.blue {
+    background-color: var(--color-blue-dark) !important;
+    &::after {
+      background: var(--color-blue-base);
+    }
+  }
 }

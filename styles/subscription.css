@@ -1,0 +1,187 @@
+section#subscription {
+  padding-block: 29.5rem 18.875rem;
+  h2 {
+    font: var(--font-title-sm);
+    color: var(--color-text-title);
+    text-align: center;
+    padding-bottom: 3.5rem;
+  }
+
+  & div.cards {
+    height: 37.875rem;
+    padding-block: 5.130625rem 6.744375rem;
+
+    &:hover {
+      & #cards-center-position {
+        & div.card {
+          &:nth-child(1) {
+            transform: translate(-100%, 15%) rotate(-8deg);
+          }
+          &:nth-child(3) {
+            transform: translate(100%, 15%) rotate(8deg);
+          }
+        }
+      }
+    }
+
+    & #cards-center-position {
+      position: relative;
+      margin: auto;
+      height: 26rem;
+      max-width: 18rem;
+    }
+
+    & div.card {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: auto;
+      height: inherit;
+      max-width: inherit;
+      background-color: var(--color-shape-base);
+      border-radius: 1.5rem;
+      border: solid 1px var(--color-shape-stroke);
+      padding: 2rem 2rem 1.75rem 2rem;
+      transition: all 800ms;
+
+      &:hover {
+        background-color: var(--color-shape-hover);
+        border-color: var(--color-shape-hover);
+        filter: drop-shadow(0px 0px 1.75rem rgb(20, 74, 114, 0.5));
+        z-index: 3 !important;
+      }
+
+      & > img {
+        transition: all 800ms;
+        position: absolute;
+
+        &[src*="bunny"] {
+          height: 3.125rem;
+          top: -3.125rem;
+          left: 12%;
+          z-index: -1;
+        }
+
+        &:first-child[src*="sparkle"] {
+          max-width: 1.625rem;
+          left: -17%;
+          top: -5%;
+        }
+        &:nth-child(2)[src*="sparkle"] {
+          max-width: 0.8125rem;
+          left: -18%;
+          top: 4%;
+        }
+
+        &:nth-child(3)[src*="sparkle"] {
+          max-width: 1.625rem;
+          left: 108%;
+          top: 97%;
+        }
+        &:nth-child(4)[src*="sparkle"] {
+          max-width: 0.8125rem;
+          left: 98%;
+          top: 104%;
+        }
+      }
+
+      &:nth-child(1) {
+        z-index: 1;
+        /* transform: translate(-100%, 10%) rotate(-8deg) !important; */
+        &:hover {
+          transform: translate(-100%, 10%) rotate(-8deg) !important;
+
+          & > img:first-child {
+            transform: rotate(-20deg);
+          }
+          & > img:nth-child(2) {
+            transform: rotate(20deg);
+          }
+        }
+      }
+      &:nth-child(2) {
+        z-index: 2;
+        & > div.top-box {
+          & > div:first-child {
+            color: var(--color-pink-light);
+          }
+        }
+        &:hover {
+          transform: translateY(-5%);
+        }
+      }
+      &:nth-child(3) {
+        z-index: 1;
+        /* transform: translate(100%, 15%) rotate(8deg); */
+        &:hover {
+          transform: translate(100%, 10%) rotate(8deg) !important;
+
+          & > img:nth-child(4) {
+            transform: rotate(-20deg);
+          }
+          & > img:nth-child(3) {
+            transform: rotate(20deg);
+          }
+        }
+      }
+      & div.top-box {
+        & > div:first-child {
+          font: var(--font-title-xs);
+          color: var(--color-blue-light);
+        }
+        & > price-per-month {
+          display: block;
+          font: var(--font-title-md);
+          padding-block: 1.5rem 0.5rem;
+          &::after {
+            content: "/mês";
+            font: var(--font-title-xs);
+          }
+        }
+        & > price-per-year {
+          display: block;
+          font: var(--font-body-sm);
+          color: var(--color-text-label);
+        }
+      }
+
+      & card-tag {
+        position: absolute;
+        left: 60%;
+        top: 6%;
+        padding: 0.5625rem 1.25rem;
+        background-color: var(--color-shape-stroke);
+        border-radius: 999px;
+        font: var(--font-tag);
+        color: var(--color-text-body);
+        letter-spacing: 0.05rem;
+      }
+
+      & div.bottom-box {
+        & ul {
+          list-style: none;
+          li {
+            font: var(--font-body-xs);
+            line-height: normal;
+            color: var(--color-text-body);
+            padding-left: 1.5rem;
+            padding-top: 0.75rem;
+
+            &.pink {
+              background: url(../assets/sparkle-pink-base.svg) bottom
+                left/0.875rem no-repeat;
+            }
+            &.blue {
+              background: url(../assets/sparkle-blue-base.svg) bottom
+                left/0.875rem no-repeat;
+            }
+          }
+        }
+        & a.button {
+          margin-top: 1.75rem;
+        }
+      }
+    }
+  }
+}

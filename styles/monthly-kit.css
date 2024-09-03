@@ -11,7 +11,6 @@ section#monthly-kit {
     gap: 1rem;
     & > img {
       width: 2rem;
-      filter: drop-shadow(0px 0px 10px rgba(143, 59, 158, 0.8));
     }
   }
   & > p {
