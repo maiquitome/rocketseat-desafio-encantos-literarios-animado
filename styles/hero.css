@@ -1,17 +1,26 @@
 section#hero {
   height: 59.25rem;
   position: relative;
+  padding-inline: 1.25rem;
 
   & header {
     display: flex;
     justify-content: space-between;
-    padding: 3.5rem 10rem 0 10rem;
+    max-width: 70rem;
+    margin: auto;
+    padding-top: 3.5rem;
     & div.button-wrapper {
       width: 4.875rem;
       margin-block: 0.5625rem;
     }
     & > a > img {
-      max-width: 14.375rem;
+      &.only-desktop {
+        max-width: 14.375rem;
+      }
+      &.only-mobile {
+        max-width: 4.875rem;
+        display: none;
+      }
     }
   }
   & h1 {
@@ -67,5 +76,28 @@ section#hero {
 @keyframes appear {
   to {
     opacity: 1;
+  }
+}
+
+@media (max-width: 71.25rem) {
+  section#hero {
+    & header {
+      padding-top: 1.25rem;
+    }
+  }
+}
+
+@media (max-width: 23.4375rem) {
+  section#hero {
+    & header {
+      & > a > img {
+        &.only-desktop {
+          display: none;
+        }
+        &.only-mobile {
+          display: inline-block;
+        }
+      }
+    }
   }
 }
