@@ -1,4 +1,5 @@
 section#subscription {
+  background: url(../assets/subscription/blur.svg) top center/contain no-repeat;
   padding-block: 29.5rem 18.875rem;
   h2 {
     font: var(--font-title-sm);

@@ -1,3 +1,18 @@
+#hero-blur {
+  top: 0;
+  left: 0;
+  height: 72.4375rem;
+  width: 120.0625rem;
+  position: absolute;
+  z-index: -1;
+
+  & > img {
+    object-fit: cover;
+    height: 72.4375rem;
+    width: 90rem;
+  }
+}
+
 section#hero {
   height: 59.25rem;
   position: relative;
